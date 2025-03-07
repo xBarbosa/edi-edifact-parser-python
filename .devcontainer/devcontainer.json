@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python EDI Project",
+	"build": {
+	  "dockerfile": "Dockerfile",
+	  "args": {
+		"VARIANT": "3.12"
+	  }
+	},
+	"customizations": {
+	  "vscode": {
+		"extensions": [
+		  "ms-python.python",
+		  "ms-toolsai.jupyter"
+		]
+	  }
+	},
+	//"mounts": [
+	//  //"source=//fileserver/sistemas/TI/SISTEMAS/_SWAP/EDI_TESTE,target=/mnt/z,type=bind,consistency=cached,o=username=rbsilva,password=9ol.*IK<,domain=GRANADO"
+	//  "source=/mnt/edi_processados_teste,target=/mnt/z,type=bind,consistency=cached"
+	//],
+	//"postCreateCommand": "docker cp /mnt/edi_processados_teste fervent_williams:/mnt/edi_proc",
+	"workspaceFolder": "/workspace",
+	"remoteUser": "vscode"
+}
